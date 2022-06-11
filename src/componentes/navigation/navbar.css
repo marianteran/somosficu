@@ -1,0 +1,90 @@
+
+ 
+.navbar-color{
+    background-color: #6667AB;
+}
+
+
+.transparente{
+    background-color: transparent;
+}
+
+.navbar-texto{
+    color:#ffffff;
+    font-size: 18px;
+}
+
+.prueba3{
+    z-index: 3;
+}
+
+
+
+.navbar-collapse{
+    display: flex;
+    justify-content: right;
+    align-items:center;
+    
+}
+
+.nav-link{
+    /* color: #ffffff; */
+    font-size: 18px;
+}
+
+/********************************************** M E D I A -Q U E R Y************************ */
+
+@media screen and (min-width: 992px) and (max-width: 1280px) {
+   
+
+   
+  
+}
+
+
+@media screen and (max-width: 991px) {
+
+   .navbar{
+        background-color: #6667AB;
+    }
+
+    .navbar-collapse{
+        justify-content: center !important;
+        
+    }
+   
+  
+  
+
+}
+
+
+@media screen and (max-width: 767px) {
+
+
+    
+  
+
+}
+
+
+
+@media screen and (max-width: 575px) {
+
+    .navbar{
+        background-color: #6667AB;
+    }
+
+    .navbar-collapse{
+        justify-content: center !important;
+        
+    }
+
+    nav img{
+        width: 50px !important;
+       
+    }
+   
+}
+
+

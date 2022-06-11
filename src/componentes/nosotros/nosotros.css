@@ -1,0 +1,330 @@
+/* PRINCIPIO MEDIA QUERY */
+
+
+/* responsive-movil */
+
+@media (min-width: 200px) and (max-width: 767px){
+
+    .subt-nosotros{
+      color:#ffffff ;
+      position: absolute;
+      top: 70% !important;
+      left: 28% !important;
+      font-weight: 100;
+      font-size: 10px !important;
+      text-align: center;
+      z-index: 2;
+    }
+  
+    .titulo-nosotros{
+      color:#ffffff ;
+      position: absolute;
+      top: 50% !important;
+      left: 24% !important;
+      font-weight: 100;
+      font-size: 40px !important;
+      text-align: center;
+      z-index: 2;
+    }
+
+
+  
+
+  }
+
+
+
+
+
+
+/* responsive-tablet */
+
+ @media (min-width: 767px) and (max-width: 991px){
+  
+    .subt-nosotros{
+      color:#ffffff ;
+      position: absolute;
+      top: 70% !important;
+      left: 26% !important;
+      font-weight: 100;
+      font-size: 3vmin !important;
+      text-align: center;
+      z-index: 2;
+    }
+  
+    .titulo-nosotros{
+      color:#ffffff ;
+      position: absolute;
+      top: 50% !important;
+      left: 25% !important;
+      font-weight: 100;
+      font-size: 10vmin!important;
+      text-align: center;
+      z-index: 2;
+    }
+  
+  }
+
+
+
+
+
+
+/* responsive-pc */
+
+/*   @media (min-width: 991px) and (max-width: 1920px){
+  
+  
+  
+  }
+   */
+
+
+
+/* FINAL MEDIA QUERY */
+
+/* banner */
+.banner-image-nosotros {
+  background-image: url(../home/img/nosotros.jpg);
+  background-size: cover;
+  max-height: 90vh;
+}
+
+
+.gradient-nosotros {
+  background: rgb(102, 103, 171);
+  background: linear-gradient(228deg, rgba(102, 103, 171, 0.7) 0%, rgba(74, 126, 191, 0.7) 100%);
+}
+
+
+.tituloheader-nosotros {
+  color: #ffffff9a;
+  font-size: 20vh;
+  font-weight: 800;
+  color: transparent;
+  text-shadow: 0 0 1.3px rgba(255, 255, 255, 0.671);
+  margin-top: 70vh;
+}
+
+.subtituloheader-contacto {
+  color: #ffffff;
+  font-size: 6vh;
+  font-weight: 400;
+  color: transparent;
+  text-shadow: 0 0 1.3px rgb(255, 255, 255);
+}
+
+.p-contacto {
+  font-size: 15px;
+  text-align: left !important;
+  margin-left: 10vw;
+  color: #000000;
+  margin-right: 40px;
+}
+
+.t-contacto {
+  text-align: left !important;
+  margin-top: 23vh;
+  margin-left: 10vw;
+  font-size: 25px;
+  font-weight: 300;
+  color: #000000;
+}
+
+.parrafo-contacto {
+  text-align: left !important;
+  margin-left: 10vw;
+  color: #000000;
+  margin-right: 40px;
+}
+
+
+/* kkkkkkkkkkkkkkkkkkk kkkkk      kkkkkkkkkkkk kkkkk kkkkkk */
+
+.boxi-nosotros {
+  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding: 3% 20%;
+
+}
+
+.container-profile-nos {
+  width: 240px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-name {
+  margin-top: 2vh;
+  text-align: center;
+  color: #6667AB;
+  font-size: 28px;
+  font-weight: 100;
+}
+
+.profile-cargo {
+  text-align: center;
+  color: #737373;
+  font-size: 22px;
+  font-weight: 100;
+
+}
+
+.profile-photo-nos {
+  width: 220px;
+  height: 220px;
+  border-radius: 220px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #ffffff;
+
+}
+
+.profile-photo-nos img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 220px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.profile-photo2 {
+  background-image: url(../nosotros/img/ED.jpg);
+  background-size: cover;
+  width: 220px;
+  height: 220px;
+  margin: 100px;
+  border-radius: 220px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #ffffff;
+}
+
+.profile-photo3 {
+  background-image: url(../nosotros/img/profile1-01-01.png);
+  background-size: cover;
+  width: 220px;
+  height: 220px;
+  margin: 100px;
+  border-radius: 220px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #ffffff;
+}
+
+.profile-photo4 {
+  background-image: url(../nosotros/img/ANG.jpg);
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  margin: 80px;
+  border-radius: 220px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #ffffff;
+}
+
+.profile-photo5 {
+  background-image: url(../nosotros/img/ARE.jpg);
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  margin: 80px;
+  border-radius: 220px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #ffffff;
+}
+
+.profile-photo6 {
+  background-image: url(../nosotros/img/MON.jpeg);
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  margin: 80px;
+  border-radius: 220px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #ffffff;
+}
+
+.profile-photo7 {
+  background-image: url(../nosotros/img/NEL.jpg);
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  margin: 80px;
+  border-radius: 220px;
+  border-style: solid;
+  border-width: 10px;
+  border-color: #ffffff;
+}
+
+.profile-title {
+  margin-top: 32vh;
+  text-align: center;
+  color: #6667AB;
+  font-size: 28px;
+  font-weight: 100;
+}
+
+.profile-subtitle {
+  text-align: center;
+  color: #737373;
+  font-size: 22px;
+  font-weight: 100;
+}
+
+.profile-p {
+  color: #737373;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 100;
+}
+
+
+
+.subt-nosotros {
+  color: #ffffff;
+  position: absolute;
+  top: 53%;
+  left: 32%;
+  font-weight: 100;
+  font-size: 30px;
+  text-align: center;
+  z-index: 2;
+}
+
+.titulo-nosotros {
+  color: #ffffff;
+  position: absolute;
+  top: 40%;
+  left: 31%;
+  font-weight: 100;
+  font-size: 100px;
+  text-align: center;
+  z-index: 2;
+}

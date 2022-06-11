@@ -1,0 +1,102 @@
+
+
+
+
+.footer-color{
+    background-color: #6667AB;
+    
+}
+
+.footer-texto{
+    color:#ffffff;
+}
+
+.content-footer-links{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.footer-links{
+    margin: 10px;
+    color: #ffffff;
+}
+
+.footer-links:hover{
+    color: var(--color-yellow);
+
+}
+
+
+.content-footer-logos{
+  
+    margin-top: 25px;
+}
+
+.footer-logos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+
+}
+
+.foo-log{
+    margin: 20px;
+}
+
+ /********************************************** M E D I A -Q U E R Y************************ */
+
+ @media screen and (min-width: 992px) and (max-width: 1280px) {
+   
+
+  
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+   
+
+
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+
+
+   
+
+}
+
+
+
+
+
+@media screen and (min-width: 421px) and (max-width: 575px) {
+
+    
+
+}
+
+
+@media screen and (max-width: 420px) {
+
+    .footer-links{
+
+        margin: 5px !important;
+        
+        
+    }
+
+    .footer-box-icons{
+        display: flex;
+        flex-direction: column !important;
+        justify-content: center;
+    }
+
+
+
+}

@@ -1,0 +1,86 @@
+#box-admin-p{
+  
+  min-height: 112vh;
+}
+
+.relleno{
+  background-color: var(--color-bg) ;
+  height: 12vh;
+}
+
+
+.container-menu-admin{
+  float: left;
+  max-width: 0px;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  transition: 300ms;
+  
+}
+
+.menu-admin{
+  display: flex;
+  flex-direction: column;
+  padding: 50px 20px;
+  background: var(--color-green);
+  height: 100%;
+  
+}
+
+.item-admin{
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  font-weight: 400;
+  margin-bottom: 20px;
+  position: relative;
+  text-align: left;
+  transform: translateX(-30px);
+  opacity: 0;
+  transition: all 300ms;
+}
+
+.item-admin:hover{
+  color: var(--color-bg);
+}
+
+.item-admin:before{
+  content: '';
+  position: absolute;
+  left: -20px;
+  width: 0px;
+  height: 100%;
+  background: var(--color-bg);
+  transition: all 300ms;
+}
+
+.item-admin:hover:before{
+  width: 6px;
+}
+
+.toggle-admin{
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 16px;
+  font-weight: 600;
+  background: var(--color-bg);
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 300ms;
+}
+
+.toggle-admin:hover{
+  opacity: 0.8;
+}
+
+.toggle-check-admin:checked ~ .container-menu-admin{
+  max-width: 220px;
+}
+
+.toggle-check-admin:checked ~ .container-menu-admin .item-admin{
+  opacity: 1;
+  transition-delay: 200ms;
+  transform: translateX(0);
+}
