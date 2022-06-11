@@ -30,7 +30,7 @@ const Admin = () => {
 
                 <div className="container-menu-admin">
                     <nav className="menu-admin">
-                        <a href="#" className="item-admin">Eventos</a>
+                        <a href="#" className="item-admin">Evento</a>
                         <a href="#" className="item-admin">Nosotros</a>
                         <a href="#" className="item-admin">Artistas</a>
                         <a href="#" className="item-admin">Contacto</a>
