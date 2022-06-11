@@ -20,7 +20,7 @@ function Nosotros() {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 
-		axios.get("http://localhost:4000/api/nosotros")
+		axios.get("https://ficu-org.herokuapp.com/api/nosotros")
 			.then(response => {
 				dispatch({
 					type: actionTypes.NOSOTROSDB,

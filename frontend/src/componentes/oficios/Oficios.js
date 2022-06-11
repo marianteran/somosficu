@@ -18,7 +18,7 @@ const Oficios = () => {
 	console.log(oficios)
 	useEffect(() => {
 		window.scrollTo(0, 0);
-		axios.get("http://localhost:4000/api/oficios")
+		axios.get("https://ficu-org.herokuapp.com/api/oficios")
 			.then(response => {
 				dispatch({
 					type: actionTypes.OFICIOSDB,

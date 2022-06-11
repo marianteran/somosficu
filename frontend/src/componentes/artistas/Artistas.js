@@ -18,7 +18,7 @@ function Artistas() {
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
-		axios.get("http://localhost:4000/api/artistas")
+		axios.get("https://ficu-org.herokuapp.com/api/artistas")
 			.then(response => {
 				dispatch({
 					type: actionTypes.ARTISTASDB,

@@ -16,7 +16,7 @@ function Cards2() {
   const [{ events }, dispatch] = useStateValue()
 
   useEffect(() => {
-    axios.get("http://localhost:4000/api/events")
+    axios.get("https://ficu-org.herokuapp.com/api/events")
       .then(response => {
         dispatch({
           type: actionTypes.EVENTSDB,
