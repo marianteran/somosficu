@@ -103,7 +103,7 @@ function Evento() {
 						</Carousel>
 
 
-						<div className="box-video">
+						{/* <div className="box-video">
 
 							<ReactPlayer
 								url={item.video}
@@ -111,7 +111,7 @@ function Evento() {
 								height="100%" 
 								controls/>
 
-						</div>
+						</div> */}
 
 						{/* <div className="box-colaboradores">
 							<h3 className="title-mes-events">Colaboradores</h3>

@@ -63,7 +63,7 @@ function Home() {
 								<h6 className="tituloheader"></h6>
 								<h5 className="t-frase mb-2">Nuestro Objetivo</h5>
 								<h2></h2>{" "}
-								<h6 className="p-frase">
+								<h6 className="texto-xxx">
 									<strong>FICU</strong> es una fundación cuyo objetivo es servir
 									de puente para que migrantes y refugiados puedan insertarse en
 									la sociedad de acogida desde el arte, la cultura y los oficios
