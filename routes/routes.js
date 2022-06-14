@@ -3,7 +3,7 @@ const passport=require("../config/passport")
 
 
 const eventsController = require("../controllers/eventsControllers")
-const {ObtenerTodosDatos, ObtenerMiembros, ObtenerArtistas ,ObtenerOficio}= eventsController
+const {ObtenerTodosDatos, ObtenerMiembros, ObtenerArtistas ,ObtenerOficio,ObtenerDeportistas}= eventsController
 
 
 const usersControllers =require("../controllers/usersControllers")
@@ -27,6 +27,11 @@ Router.route("/artistas")
 
 Router.route("/oficios")
 .get(ObtenerOficio)
+
+Router.route("/deportistas")
+.get(ObtenerDeportistas)
+
+
 
 Router.route("/signup")
 .post(validator,nuevoUsuario)

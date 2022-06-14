@@ -2,7 +2,7 @@ const mongoose =require("mongoose")
 
 const artistasSchema= new mongoose.Schema ({
 
-    name: {type:String, require:true},
+    nombre: {type:String, require:true},
     apellido: {type:String, require:true},
     profesion:{type:String, require:true},
     foto:{type:String, require:false},

@@ -1,6 +1,6 @@
 const mongoose =require("mongoose")
 
-const oficiosSchema= new mongoose.Schema ({
+const deportistasSchema= new mongoose.Schema ({
 
     nombre: {type:String, require:true},
     apellido: {type:String, require:true},
@@ -14,6 +14,6 @@ const oficiosSchema= new mongoose.Schema ({
 
 })
 
-const Oficios = mongoose.model("oficios", oficiosSchema)
+const Deportistas = mongoose.model("deportistas", deportistasSchema)
 
-module.exports =Oficios;
+module.exports =Deportistas;

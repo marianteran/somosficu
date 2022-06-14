@@ -8,6 +8,7 @@ import Evento from './componentes/eventos/Evento'
 import Pcontacto from './componentes/contacto/Pcontacto'
 import Artistas from './componentes/artistas/Artistas'
 import Oficios from './componentes/oficios/Oficios'
+import Deportistas from './componentes/deportistas/Deportistas'
 import Footer from './componentes/footer/Footer'
 import './App.css';
 import Admin from "./componentes/admin/Admin";
@@ -46,7 +47,8 @@ function App() {
           <Route path="/eventos" element={<Eventos />} />
           <Route path="/evento/:id" element={<Evento />} />
           <Route path="/artistas" element={<Artistas />} />
-          <Route path="/oficios" element={<Oficios />} />
+          <Route path="/talentos" element={<Oficios />} />
+          <Route path="/deportistas" element={<Deportistas />} />
           <Route path="/contacto" element={<Pcontacto />} />
           <Route path="/admin" element={<Admin />} />
         </Routes>

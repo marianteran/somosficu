@@ -3,6 +3,7 @@ export const initialState = {
   nosotros: [],
   artistas: [],
   oficios: [],
+  deportistas:[],
 };
 
 export const actionTypes = {
@@ -10,6 +11,7 @@ export const actionTypes = {
   NOSOTROSDB: "NOSOTROSDB",
   ARTISTASDB: "ARTISTASDB",
   OFICIOSDB: "OFICIOSDB",
+  DEPORTISTASDB:"DEPORTISTASDB"
 };
 
 const reducer = (state, action) => {
@@ -40,6 +42,12 @@ const reducer = (state, action) => {
         ...state,
         oficios: action.oficios,
       };
+
+      case "DEPORTISTASDB":
+        return {
+          ...state,
+          deportistas: action.deportistas,
+        };
 
 
   }

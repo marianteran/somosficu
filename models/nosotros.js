@@ -2,7 +2,7 @@ const mongoose =require("mongoose")
 
 const nosotrosSchema= new mongoose.Schema ({
 
-    name: {type:String, require:true},
+    nombre: {type:String, require:true},
     apellido: {type:String, require:true},
     cargo:{type:String, require:true},
     foto:{type:String, require:false},
