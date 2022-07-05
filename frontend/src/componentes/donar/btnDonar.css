@@ -1,0 +1,33 @@
+.donarContainer{
+ 
+    
+  
+}
+
+.donarContent{
+    
+    float: right;
+    margin-top: 20px;
+    margin-right: 50px;
+  
+
+
+}
+
+.btn-donar{
+    background-color: var(--color-yellow);
+    border-style: none;
+    border-radius: 0.5rem;
+    font-size: 15px !important;
+    color: #ffffff;
+    padding: 5px 20px;
+    box-shadow: 0px 0px 5px 0px rgba(199, 183, 183, 0.75);
+  }
+  
+  .donarContainer h6{
+    color: #ffffff;
+  }
+  .btn-donar:hover{
+    color: #ffffff !important;
+    background-color: var(--color-bg) !important;
+  }

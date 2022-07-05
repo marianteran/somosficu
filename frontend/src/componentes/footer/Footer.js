@@ -11,6 +11,8 @@ import logooim from "./oim2.svg";
 import logoSSDDHH from "./SSDDHH.svg"
 import logogcba from "./gcba-01.svg"
 import logoacasomos from "./logoacasomos-01.png"
+import cccva from './CCCVA.png'
+import BtnDonar from "../donar/BtnDonar";
 
 
 
@@ -19,14 +21,16 @@ function Footer() {
     <>
       <footer className="footer-color  ">
 
+        <BtnDonar/>
+
         <div className="container p-4 pb-0 footer-box-icons " style={{display: "flex",justifyContent: "space-between",alignItems: "center",}}>
 
 
           <div className="content-footer-logos " >
-            <p class="footer-texto text-center p-3">Nos acompañan:</p>
+            <p className="footer-texto text-center p-3">Nos acompañan:</p>
             <div className="footer-logos">
               <a
-                href="https://fundacionacnur.org/"
+                href="https://www.acnur.org/"
                 data-toggle="tooltip"
                 data-placement="top"
                 title="Instagram"
@@ -92,7 +96,7 @@ function Footer() {
               </a>
             </div>
 
-            <div className="footer-logos d-flex justify-content-center" >
+            <div className="footer-logos " >
               <a
                 href="https://acasomos.org/"
                 data-toggle="tooltip"
@@ -106,6 +110,26 @@ function Footer() {
                   src={logoacasomos}
                   alt="logo"
                   width="90"
+                  
+                />
+              </a>
+
+              <a
+                href="https://acasomos.org/"
+                data-toggle="tooltip"
+                data-placement="top"
+                title="Instagram"
+                target="_blank"
+                className="foo-log"
+                rel="noreferrer"
+                
+              >
+                <img
+                  src={cccva}
+                  alt="logo"
+                  width="40"
+                  style={{marginLeft:"-100px"}}
+                 
                   
                 />
               </a>
@@ -181,8 +205,10 @@ function Footer() {
             <LinkRouter to="/" className="footer-links" >Home</LinkRouter>
             <LinkRouter to="/eventos" className="footer-links">Eventos</LinkRouter>
             <LinkRouter to="/nosotros" className="footer-links" >Nosotros</LinkRouter>
-            <LinkRouter to="/artistas" className="footer-links" >Artistas</LinkRouter>
-            <LinkRouter to="/oficios" className="footer-links" >Oficios</LinkRouter>
+            <LinkRouter to="/artistas" className="footer-links" >Arte</LinkRouter>
+            <LinkRouter to="/talento" className="footer-links" >Talento</LinkRouter>
+            <LinkRouter to="/deportistas" className="footer-links" >Deporte</LinkRouter>
+            <LinkRouter to="/colaboradores" className="footer-links" >Colaboradores</LinkRouter>
             <LinkRouter to="/contacto" className="footer-links" >Contacto</LinkRouter>
         </div>
 

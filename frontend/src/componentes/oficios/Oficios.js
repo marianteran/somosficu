@@ -10,6 +10,7 @@ import { IoLogoInstagram } from 'react-icons/io';
 import { actionTypes } from '../../core/context/reducer';
 import { useStateValue } from '../../core/context/StateProvider';
 import axios from 'axios';
+import CarouselOficios from "../carousel/CarouselOficios";
 
 const Oficios = () => {
 
@@ -31,7 +32,7 @@ const Oficios = () => {
     <>
     	{/*********** Banner **************/}
 
-			<Carousel7 />
+			<CarouselOficios />
 			<div style={{ height: "10vh" }}></div>
 
 			<h3 className="t-icono">Nuestros Colaboradores</h3>

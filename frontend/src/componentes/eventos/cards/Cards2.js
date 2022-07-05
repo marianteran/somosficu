@@ -16,19 +16,20 @@ function Cards2() {
   const [{ events }, dispatch] = useStateValue()
 
   useEffect(() => {
-    axios.get("https://ficu-org.herokuapp.com/api/events")
+    axios.get("http://localhost:4000/api/events")
       .then(response => {
+        //console.log(response.data)
         dispatch({
           type: actionTypes.EVENTSDB,
-          events: response.data.response.events
-        })
+          events: response.data
+        }) 
       })
 
   }, [])
 
   return (
     <>
-      <div class="container-cards2">
+      <div className="container-cards2">
 
 
 
@@ -36,18 +37,18 @@ function Cards2() {
           return (
 
             <LinkRouter to={`/evento/${item._id}`}>
-              <div class="card-wrapper">
-                <div class="card profile-two">
-                  <div class="card-image profile-img--two">
+              <div className="card-wrapper" key={item._id}>
+                <div className="card profile-two">
+                  <div className="card-image profile-img--two">
                     <img src={process.env.PUBLIC_URL + `/img/eventos/${item.galeria[0]}`} alt="profile two" />
                   </div>
 
-                  <div class="details jane">
+                  <div className="details jane">
                     <h2>
                       {item.titulo}
                       <br />
-                      <span class="job-title">{item.lugar}</span>
-                      <p class="job-title">{item.fecha}</p>
+                      <span className="job-title">{item.lugar}</span>
+                      <p className="job-title">{item.fecha}</p>
                     </h2>
                   </div>
                 </div>
@@ -56,13 +57,6 @@ function Cards2() {
             </LinkRouter>
           )
         })}
-
-
-
-
-
-
-
 
 
 

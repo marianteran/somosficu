@@ -10,9 +10,10 @@ import { IoLogoInstagram } from 'react-icons/io';
 import { actionTypes } from '../../core/context/reducer';
 import { useStateValue } from '../../core/context/StateProvider';
 import axios from 'axios';
-
+import CarouselArtista from "../carousel/CarouselArtista";
 
 function Artistas() {
+
 
 	const [{ artistas }, dispatch] = useStateValue()
 
@@ -29,9 +30,9 @@ function Artistas() {
 
 	return (
 		<>
-			{/*********** Banner **************/}
 
-			<Carousel5 />
+
+		<CarouselArtista/>
 			<div style={{ height: "10vh" }}></div>
 
 			<h3 className="t-icono">Nuestros Artistas</h3>
@@ -51,8 +52,8 @@ function Artistas() {
 							<div className="artist-links">
 
 								<a href={item.web} target="_blank" rel="noreferrer"><BiWorld className="artist-icons" /></a>
-								<a href={item.instagram} target="_blank" rel="noreferrer"><IoLogoInstagram className="artist-icons"/></a>
-								
+								<a href={item.instagram} target="_blank" rel="noreferrer"><IoLogoInstagram className="artist-icons" /></a>
+
 							</div>
 
 						</div>

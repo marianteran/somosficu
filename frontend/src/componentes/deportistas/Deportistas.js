@@ -5,27 +5,36 @@ import axios from 'axios';
 
 import { BiWorld } from 'react-icons/bi';
 import { IoLogoInstagram } from 'react-icons/io';
+import CarouselDeportistas from "../carousel/CarouselDeportistas";
+import PaginaenProduccion from "../PaginaenProduccion";
+
 
 const Deportistas = () => {
-  const [{ deportistas }, dispatch] = useStateValue()
 
-    console.log(deportistas)
-  
+	const [{ deportistas }, dispatch] = useStateValue()
+
+	console.log(deportistas)
+
 	useEffect(() => {
 		window.scrollTo(0, 0);
 		axios.get("http://localhost:4000/api/deportistas")
-    .then(response => {
-      dispatch({
-        type: actionTypes.DEPORTISTASDB,
-        deportistas: response.data.response.deportistas
-      })
-    })
+			.then(response => {
+				dispatch({
+					type: actionTypes.DEPORTISTASDB,
+					deportistas: response.data.response.deportistas
+				})
+			})
 	}, []);
 
-  return (
-    <>
+	return (
+		<>
 
-    			<div style={{ height: "10vh" }}></div>
+		<CarouselDeportistas/>
+
+
+
+
+			 <div style={{ height: "10vh" }}></div>
 
 			<h3 className="t-icono">Nuestros Artistas</h3>
 			<p className="p-icono">Los artistas que nos acompañan</p>
@@ -44,8 +53,8 @@ const Deportistas = () => {
 							<div className="artist-links">
 
 								<a href={item.web} target="_blank" rel="noreferrer"><BiWorld className="artist-icons" /></a>
-								<a href={item.instagram} target="_blank" rel="noreferrer"><IoLogoInstagram className="artist-icons"/></a>
-								
+								<a href={item.instagram} target="_blank" rel="noreferrer"><IoLogoInstagram className="artist-icons" /></a>
+
 							</div>
 
 						</div>
@@ -55,14 +64,14 @@ const Deportistas = () => {
 				})}
 
 			</div>
-    
-    
-    
-    
-    
-    
-    </>
-  )
+ 
+ 
+
+
+
+
+		</>
+	)
 }
 
 

@@ -1,11 +1,10 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { Link as LinkRouter } from "react-router-dom";
 import "./home.css";
 
-import Carousel from "../carousel/Carousel";
-import home1 from "./img/ficu1.jpg";
-import home2 from "./img/ficu2.jpg";
-import home4 from "./img/ficu8.jpg";
+//import Carousel from "../carousel/Carousel";
+import "animate.css";
+import CarouselHome from "../carousel/CarouselHome";
 import icono1 from "./img/icons/1.png";
 import icono2 from "./img/icons/2.png";
 import icono3 from "./img/icons/3.png";
@@ -13,31 +12,28 @@ import icono4 from "./img/icons/4.png";
 import icono5 from "./img/icons/5.png";
 import icono6 from "./img/icons/6.png";
 import icono7 from "./img/icons/7.png";
-import video1 from "./video/video1.mp4";
 import video2 from "./video/video2.mp4";
-import Logo from "../navigation/logo2.png";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import "animate.css";
-import CarouselHome from "../carousel/CarouselHome";
 
-import { actionTypes } from "../../core/context/reducer";
 import { useStateValue } from "../../core/context/StateProvider";
-import axios from "axios";
 
 
 
 /* carousel */
 
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Parallax, Pagination, Navigation } from "swiper";
-import "swiper/css/pagination";
 import "swiper/css/navigation";
+import "swiper/css/pagination";
 import CarouselEvent from "./CarouselEvent";
 
 
+
+
+
+
 function Home() {
-	const [{ events }, dispatch] = useStateValue();
+	const [, dispatch] = useStateValue();
+
+
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -50,8 +46,14 @@ function Home() {
 			{/* <Carousel /> */}
 
 			{/*********** Presentacion **************/}
-
+			
 			<CarouselHome />
+
+
+
+
+		{/* <HomeCarousel/> */}
+			<div></div>
 
 			<div className="container-presentacion">
 				<section class="section top-section">
@@ -83,6 +85,9 @@ function Home() {
 					<source src={video2} type="video/mp4" />
 				</video>
 			</div>
+
+
+		
 
 			{/*********** Mision ***********/}
 
@@ -279,7 +284,7 @@ function Home() {
 							<div className="div-ejes">
 								<div className="ejes-photo5"></div>
 								<div className="conten-ejes-text">
-									<h3 className="st-ejes">ACOMPAÑAMIENTO PSICOEMOCIONAL</h3>
+									<h3 className="st-ejes">ACOMPAÑAMIENTO</h3>
 									<p className="sp-ejes"></p>
 								</div>
 							</div>

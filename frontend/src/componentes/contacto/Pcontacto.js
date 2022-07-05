@@ -9,6 +9,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import Carousel4 from "../carousel/Carousel4";
+import CarouselContacto from "../carousel/CarouselContacto";
 
 
 
@@ -23,17 +24,9 @@ function Pcontacto() {
 		<>
 			{/*********** Banner **************/}
 
-			<Carousel4 />
+			<CarouselContacto />
 
-			{/*      <div className="banner-image-contacto w-100 vh-100 d-flex justify-content-center align-items-center">
-        <div className="content-header">
-          <h1 className="animate__animated animate__fadeInDown tituloheader-contacto">
-            CONTACTO
-          </h1>
-          <h3 className="animate__animated animate__fadeInDown subtituloheader"></h3>
-          <KeyboardArrowDownIcon sx={{ color: "#ffffff", width: "5vw" }} />
-        </div>
-  </div>*/}
+	
 
 			{/************ Formulario ***********/}
 

@@ -13,9 +13,13 @@ import "animate.css";
 
 import Cards2 from './cards/Cards2'
 import Galeria from './galeria/Galeria'
+import CarouselEventos from "../carousel/CarouselEventos";
+
+
 
 
 function Eventos() {
+
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
@@ -23,10 +27,8 @@ function Eventos() {
 
 	return (
 		<>
-			{/*********** Banner **************/}
+			<CarouselEventos/>		
 
-
-			<Carousel3 />
 			<div style={{ height: "10vh" }}></div>
 
 			<div className="box-events">

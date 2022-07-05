@@ -16,24 +16,28 @@ import Admin from "./componentes/admin/Admin";
 import { actionTypes } from './core/context/reducer';
 import { useStateValue } from './core/context/StateProvider';
 import axios from 'axios';
+import Colaboradores from "./componentes/colaboradores/Colaboradores";
+import MostrarEventos from "./componentes/admin/adminEventos/MostrarEventos";
+import CrearEventos from "./componentes/admin/adminEventos/CrearEventos";
+import EditEvents from "./componentes/admin/adminEventos/EditEvents";
 
 
 function App() {
 
   const [{ events}, dispatch] = useStateValue()
 
-  useEffect(() => {
-    axios.get("https://ficu-org.herokuapp.com/api/events")
+  /* useEffect(() => {
+    axios.get("http://localhost:4000/api/events")
       .then(response => {
         dispatch({
           type: actionTypes.EVENTSDB,
-          events: response.data.response.events
+          events: response.data
         })
       })
 
   }, [])
 
-  console.log(events)
+  console.log(events) */
 
 
 
@@ -47,10 +51,15 @@ function App() {
           <Route path="/eventos" element={<Eventos />} />
           <Route path="/evento/:id" element={<Evento />} />
           <Route path="/artistas" element={<Artistas />} />
-          <Route path="/talentos" element={<Oficios />} />
+          <Route path="/talento" element={<Oficios />} />
           <Route path="/deportistas" element={<Deportistas />} />
           <Route path="/contacto" element={<Pcontacto />} />
+          <Route path="/colaboradores" element={<Colaboradores />} />
           <Route path="/admin" element={<Admin />} />
+          <Route path="/mostrarevents" element={<MostrarEventos />} />
+          <Route path="/crearevents" element={<CrearEventos />} />
+          <Route path="/editarevents/:id" element={<EditEvents />} />
+
         </Routes>
         <Footer />
       </BrowserRouter>

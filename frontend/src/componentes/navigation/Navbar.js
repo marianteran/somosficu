@@ -46,18 +46,23 @@ function Navbar() {
 							<li className="nav-item">
 								<LinkRouter className="nav-link " aria-current="page" to="/artistas"
 								>
-									Artistas</LinkRouter>
+									Arte</LinkRouter>
 							</li>
 
 							<li className="nav-item">
-								<LinkRouter className="nav-link " to="/talentos"
+								<LinkRouter className="nav-link " to="/talento"
 								>
-									Talentos</LinkRouter>
+									Talento</LinkRouter>
 							</li>
 							<li className="nav-item">
 								<LinkRouter className="nav-link " to="/deportistas"
 								>
-									Deportistas</LinkRouter>
+									Deporte</LinkRouter>
+							</li>
+							<li className="nav-item">
+								<LinkRouter className="nav-link " to="/colaboradores"
+								>
+									Colaboradores</LinkRouter>
 							</li>
 
 							<li className="nav-item">

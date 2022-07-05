@@ -38,46 +38,39 @@ function Carousel3() {
   return (
     <>
       <div className="carousel-home-p">
-  
+
         <div className="carousel-gradiente"> </div>
 
-        
+
         <h6 className="animate__animated animate__fadeInDown titulo-eventos">EVENTOS</h6>
         <h6 className="animate__animated animate__fadeInDown subt-eventos">Entérate de todo lo que esta por llegar</h6>
         <KeyboardArrowDownIcon className="animate__animated animate__fadeInDown arrow-info" />
 
-     
-{/*        <LinkRouter to="/eventos">
-          <button type="button" className="animate__animated animate__fadeInDown btn btn-header ">
-            Próximos eventos
-          </button>
-  </LinkRouter>*/}
+        <Carousel
+          responsive={responsive}
+          draggable={true}
+          infinite={true}
+          autoPlay={true}
+          autoPlaySpeed={2000}
+          transitionDuration={2000}
+          arrows={false}
 
-      <Carousel
-        responsive={responsive}
-        draggable={true}
-        infinite={true}
-        autoPlay={true}
-        autoPlaySpeed={2000}
-        transitionDuration={2000}
-        arrows={false}
+        >
+          <div>
+            {" "}
+            <img src={cultura1} alt='cultura' className="d-block w-100" />
 
-      >
-        <div>
-          {" "}
-          <img src={cultura1} alt='cultura' className="d-block w-100" />
+          </div>
+          <div>
+            {" "}
+            <img src={cultura2} alt='cultura' className="d-block w-100" />
+          </div>
+          <div>
+            {" "}
+            <img src={cultura3} alt='cultura' className="d-block w-100" />
+          </div>
+        </Carousel>
 
-        </div>
-        <div>
-          {" "}
-          <img src={cultura2} alt='cultura' className="d-block w-100" />
-        </div>
-        <div>
-          {" "}
-          <img src={cultura3} alt='cultura' className="d-block w-100" />
-        </div>
-      </Carousel>
-      
       </div>
     </>
   );

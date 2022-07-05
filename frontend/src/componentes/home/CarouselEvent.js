@@ -5,6 +5,8 @@ import { Link as LinkRouter } from "react-router-dom";
 import { useStateValue } from "../../core/context/StateProvider";
 import './swiper.css'
 
+
+
 const CarouselEvent = () => {
     const [{ events }, dispatch] = useStateValue();
 

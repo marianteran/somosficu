@@ -1,150 +1,60 @@
 const Events = require("../models/events")
-const Nosotros = require("../models/nosotros")
-const Artistas = require("../models/artistas")
-const Oficios = require("../models/oficios")
-const Deportistas = require("../models/deportistas")
 
-const eventsController={
-    ObtenerTodosDatos:async(req,resp)=>{
-       /*  console.log(req)
-        console.log(resp) */
-        let events
-
-        let error =null
-
+const eventsController = {
+    updateEvents: async (req, res) => {
         try {
-            events = await Events.find()
-            
+            const updatedEvents = await Events.findByIdAndUpdate(
+                req.params.id,
+                { $set: req.body },
+                { new: true }
+            );
+            res.status(200).json(updatedEvents);
         } catch (err) {
-            error =err
-            console.log(error)
+            console.log(err)
         }
-
-        resp.json({
-            response:error?"ERROR":{events},
-            success:error? false:true,
-            error:error
-        })
+    },
+    deleteEvents: async (req, res) => {
+        try {
+            await Events.findByIdAndDelete(req.params.id);
+            res.status(200).json("Events has been deleted.");
+        } catch (err) {
+            console.log(err)
+        }
+    },
+    getEvent: async (req, res) => {
+        try {
+            const evento = await Events.findById(req.params.id);
+            res.status(200).json(evento);
+        } catch (err) {
+            console.log(err)
+        }
+    },
+    getEvents: async (req, res) => {
+        try {
+            const eventos = await Events.find();
+            res.status(200).json(eventos);
+        } catch (err) {
+            console.log(err)
+        }
     },
 
-    ObtenerEvento:async(req,resp)=>{
-        let event
-        //console.log(req.params)
-        const events =req.params.event
-        let error=null
+    CreateEvent: async (req, res) => {
+        const newEvent = new Events(req.body)
         try {
-            event= await Events.find({titulo:events})
-            
+            const savedEvent = await newEvent.save()
+            res.status(200).json(savedEvent)
+
         } catch (err) {
-            error=err
-            console.log(error)
-            
+            res.status(500).json(err)
+
         }
-
-        resp.json({
-            response:error?"ERROR":{event},
-            success:error? false:true,
-            error:error
-        })
-
-        
     },
 
 
-    ObtenerMiembros:async(req,resp)=>{
-        /*  console.log(req)
-         console.log(resp) */
-         let nosotros
- 
-         let error =null
- 
-         try {
-             nosotros = await Nosotros.find()
-             
-         } catch (err) {
-             error =err
-             console.log(error)
-         }
- 
-         resp.json({
-             response:error?"ERROR":{nosotros},
-             success:error? false:true,
-             error:error
-         })
-     },
-
-     ObtenerArtistas:async(req,resp)=>{
-        /*  console.log(req)
-         console.log(resp) */
-         let artistas
- 
-         let error =null
- 
-         try {
-             artistas = await Artistas.find()
-             
-         } catch (err) {
-             error =err
-             console.log(error)
-         }
- 
-         resp.json({
-             response:error?"ERROR":{artistas},
-             success:error? false:true,
-             error:error
-         })
-     },
-
-
-     ObtenerOficio:async(req,resp)=>{
-        /*  console.log(req)
-         console.log(resp) */
-         let oficios
- 
-         let error =null
- 
-         try {
-             oficios = await Oficios.find()
-             
-         } catch (err) {
-             error =err
-             console.log(error)
-         }
- 
-         resp.json({
-             response:error?"ERROR":{oficios},
-             success:error? false:true,
-             error:error
-         })
-     },
-
-     ObtenerDeportistas:async(req,resp)=>{
-        /*  console.log(req)
-         console.log(resp) */
-         let deportistas
- 
-         let error =null
- 
-         try {
-             deportistas = await Deportistas.find()
-             
-         } catch (err) {
-             error =err
-             console.log(error)
-         }
- 
-         resp.json({
-             response:error?"ERROR":{deportistas},
-             success:error? false:true,
-             error:error
-         })
-     },
-
-    
 
 
 
-  
+
 }
 
-module.exports=eventsController
+module.exports = eventsController

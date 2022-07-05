@@ -64,3 +64,49 @@ body{
 
 
 
+
+.bannerPrincipal{
+  position: relative ;
+  background: rgb(102,103,171) ;
+  background: linear-gradient(228deg, rgba(102,103,171,0.7) 0%, rgba(74,126,191,0.7) 100%) !important; 
+  width: 100%;
+  height: 100% !important;
+  
+  
+}
+
+.bannerPrincipalContenido{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgb(102,103,171);
+  background: linear-gradient(228deg, rgba(102,103,171,0.7) 0%, rgba(74,126,191,0.7) 100%); 
+  z-index: 1;
+  
+  
+}
+
+.bannerPrincipalTexto{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.bannerPrincipalTitulo{
+  color:#ffffff ;
+  font-weight: 100;
+  font-size: 100px;
+  text-align: center;
+  
+
+}
+
+.bannerPrincipalSubTitulo{
+  color:#ffffff ;
+  font-weight: 100;
+  font-size: 30px;
+  text-align: center;
+}

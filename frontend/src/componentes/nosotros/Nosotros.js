@@ -9,10 +9,12 @@ import "animate.css";
 import { actionTypes } from '../../core/context/reducer';
 import { useStateValue } from '../../core/context/StateProvider';
 import axios from 'axios';
+import CarouselNosotros from "../carousel/CarouselNosotros";
 
 
 
 function Nosotros() {
+
 
 	const [{ nosotros }, dispatch] = useStateValue()
 
@@ -37,28 +39,8 @@ function Nosotros() {
 
 	return (
 		<>
-			{/*********** Banner **************/}
-
-			<Carousel2 />
+			<CarouselNosotros/>
 			<div style={{ height: "10vh" }}></div>
-
-			{/*<div className="gradient-nosotros w-100 h-100">
-      <div className="banner-image-nosotros w-100 h-100 d-flex justify-content-center align-items-center">
-        <div className="content-header">
-          <h1 className="animate__animated animate__fadeInDown tituloheader-nosotros">
-            NOSOTROS
-          </h1>
-          <h3 className="animate__animated animate__fadeInDown subtituloheader"></h3>
-          <KeyboardArrowDownIcon sx={{ color: "#ffffff", width: "5vw" }} />
-        </div>
-      </div>
-  </div>*/}
-
-
-
-
-			{/*********** Banner2 **************/}
-
 
 
 
