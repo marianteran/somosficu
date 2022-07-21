@@ -22,7 +22,7 @@ function Nosotros() {
 	useEffect(() => {
 		window.scrollTo(0, 0);
 
-		axios.get("https://ficu-org.herokuapp.com/api/nosotros")
+		axios.get("https://somosficu.org/api/nosotros")
 			.then(response => {
 				dispatch({
 					type: actionTypes.NOSOTROSDB,

@@ -27,7 +27,7 @@ function App() {
   const [{ events}, dispatch] = useStateValue()
 
   /* useEffect(() => {
-    axios.get("http://localhost:4000/api/events")
+    axios.get("https://somosficu.org/api/events")
       .then(response => {
         dispatch({
           type: actionTypes.EVENTSDB,

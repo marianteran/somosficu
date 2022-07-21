@@ -17,7 +17,7 @@ const Deportistas = () => {
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
-		axios.get("http://localhost:4000/api/deportistas")
+		axios.get("https://somosficu.org/api/deportistas")
 			.then(response => {
 				dispatch({
 					type: actionTypes.DEPORTISTASDB,

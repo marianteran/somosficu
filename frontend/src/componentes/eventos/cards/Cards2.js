@@ -16,7 +16,7 @@ function Cards2() {
   const [{ events }, dispatch] = useStateValue()
 
   useEffect(() => {
-    axios.get("http://localhost:4000/api/events")
+    axios.get("https://somosficu.org/api/events")
       .then(response => {
         //console.log(response.data)
         dispatch({
