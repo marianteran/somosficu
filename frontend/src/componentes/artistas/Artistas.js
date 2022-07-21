@@ -19,7 +19,7 @@ function Artistas() {
 
 	useEffect(() => {
 		window.scrollTo(0, 0);
-		axios.get("https://ficu-org.herokuapp.com/api/artistas")
+		axios.get("https://somosficu.org/api/artistas")
 			.then(response => {
 				dispatch({
 					type: actionTypes.ARTISTASDB,
