@@ -12,16 +12,15 @@ function Contacto() {
 				<form action="https://gmail.us9.list-manage.com/subscribe/post?u=a8d976e07599c33b061233d0d&id=0b2edb8fe4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" className="validate" target="_blank" noValidate>
 					<div id="mc_embed_signup_scroll">
 						<h3 className="t-icono">Suscríbete</h3>
-						<div className="text-contacto"><span className="asterisk">*</span> item requeridos</div>
 						<div className="mc-field-group">
 							<label htmlFor="mce-EMAIL"></label>
-							<input type="email"  name="EMAIL" placeholder="* Email" required className="form-control rounded-pill" id="mce-EMAIL"  />
+							<input type="email"  name="EMAIL" placeholder="Email" required className="form-control rounded-pill" id="mce-EMAIL"  />
 
 					
 						</div>
 						<div className="mc-field-group">
 							<label htmlFor="mce-FNAME"></label>
-							<input type="text" name="FNAME" required className="form-control rounded-pill" placeholder="* Nombre"  id="mce-FNAME" />
+							<input type="text" name="FNAME" required className="form-control rounded-pill" placeholder="Nombre"  id="mce-FNAME" />
 						</div>
 						<div id="mce-responses" className="clear foot">
 							<div className="response" id="mce-error-response" style={{ display: 'none' }} />

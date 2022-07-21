@@ -3,7 +3,7 @@ const mongoose =require("mongoose")
 const oficiosSchema= new mongoose.Schema ({
 
     nombre: {type:String, require:true},
-    apellido: {type:String, require:true},
+    apellido: {type:String, require:false},
     profesion:{type:String, require:true},
     foto:{type:String, require:false},
     nacionalidad:{type:String, require:true},

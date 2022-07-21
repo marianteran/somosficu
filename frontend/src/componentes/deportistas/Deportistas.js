@@ -36,8 +36,8 @@ const Deportistas = () => {
 
 			 <div style={{ height: "10vh" }}></div>
 
-			<h3 className="t-icono">Nuestros Artistas</h3>
-			<p className="p-icono">Los artistas que nos acompañan</p>
+			<h3 className="t-icono">Nuestros Deportistas</h3>
+			<p className="p-icono">Los deportistas que nos acompañan</p>
 
 			<div className="box-artistas">
 				{deportistas.map(item => {

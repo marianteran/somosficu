@@ -28,6 +28,13 @@ a{
       width: 200px !important;
       z-index: 2;
     } */
+
+    .section{
+      padding-top: 200px;
+      height: 50vh !important;
+      min-height: 200px;
+      position: relative;
+    }
     
     .logohome img{
      /*  width: 20% !important; */
@@ -153,6 +160,13 @@ a{
       top: 15% !important; */
     /*   width: 400px !important; */
      /*  z-index: 2; */
+    }
+
+    .section{
+      padding-top: 200px;
+      height: 50vh !important;
+      min-height: 200px;
+      position: relative;
     }
     
     .logohome img{
@@ -975,7 +989,7 @@ a{
  /*  position: absolute;
   left: 25%;
   top: 18%; */
-  width: 75%;
+  width: 50%;
   /* z-index: 2; */
 
 }

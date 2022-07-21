@@ -35,8 +35,8 @@ const Oficios = () => {
 			<CarouselOficios />
 			<div style={{ height: "10vh" }}></div>
 
-			<h3 className="t-icono">Nuestros Colaboradores</h3>
-			<p className="p-icono">Las personas que nos acompañan</p>
+			<h3 className="t-icono">Nuestros Talentos</h3>
+			<p className="p-icono">Conoce las personas talentosas que nos acompañan</p>
 
 			<div className="box-artistas">
 				{oficios.map(item => {

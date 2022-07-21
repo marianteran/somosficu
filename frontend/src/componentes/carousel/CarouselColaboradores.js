@@ -36,8 +36,8 @@ const CarouselColaboradores = () => {
 
                     <div className="bannerPrincipalTexto">
 
-                        <h6 className="animate__animated animate__fadeInDown bannerPrincipalTitulo">COLABORADORES</h6>
-                        <h6 className="animate__animated animate__fadeInDown bannerPrincipalSubTitulo">Entérate de todo lo que esta por llegar</h6>
+                        <h6 className="animate__animated animate__fadeInDown bannerPrincipalTitulo">COLABORAN</h6>
+                        <h6 className="animate__animated animate__fadeInDown bannerPrincipalSubTitulo">Directorio de colaboradores</h6>
                     </div>
                 </div>
                 <Carousel

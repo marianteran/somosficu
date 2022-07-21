@@ -21,7 +21,7 @@ function Footer() {
     <>
       <footer className="footer-color  ">
 
-        <BtnDonar/>
+        
 
         <div className="container p-4 pb-0 footer-box-icons " style={{display: "flex",justifyContent: "space-between",alignItems: "center",}}>
 
@@ -33,7 +33,7 @@ function Footer() {
                 href="https://www.acnur.org/"
                 data-toggle="tooltip"
                 data-placement="top"
-                title="Instagram"
+                title="ACNUR"
                 target="_blank"
                 className="foo-log"
                 rel="noreferrer"
@@ -44,7 +44,7 @@ function Footer() {
                 href="https://www.iom.int/es"
                 data-toggle="tooltip"
                 data-placement="top"
-                title="Instagram"
+                title="OIM"
                 target="_blank"
                 className="foo-log"
                 rel="noreferrer"
@@ -62,10 +62,10 @@ function Footer() {
 
             <div className="footer-logos" >
               <a
-                href="https://www.iom.int/es"
+                href="https://www.buenosaires.gob.ar/vicejefatura/subsecretaria-de-derechos-humanos-y-pluralismo-cultural"
                 data-toggle="tooltip"
                 data-placement="top"
-                title="Instagram"
+                title="SSGCBA"
                 target="_blank"
                 className="foo-log"
                 rel="noreferrer"
@@ -79,10 +79,10 @@ function Footer() {
               </a>
 
               <a
-                href="https://www.iom.int/es"
+                href="https://www.buenosaires.gob.ar/"
                 data-toggle="tooltip"
                 data-placement="top"
-                title="Instagram"
+                title="GCBA"
                 target="_blank"
                 className="foo-log"
                 rel="noreferrer"
@@ -101,7 +101,7 @@ function Footer() {
                 href="https://acasomos.org/"
                 data-toggle="tooltip"
                 data-placement="top"
-                title="Instagram"
+                title="Aca somos"
                 target="_blank"
                 className="foo-log"
                 rel="noreferrer"
@@ -115,10 +115,10 @@ function Footer() {
               </a>
 
               <a
-                href="https://acasomos.org/"
+                href="https://www.instagram.com/consejocva/"
                 data-toggle="tooltip"
                 data-placement="top"
-                title="Instagram"
+                title="CCCVA"
                 target="_blank"
                 className="foo-log"
                 rel="noreferrer"
@@ -140,6 +140,8 @@ function Footer() {
 
 
           <div className="containerf p-4 pb-0">
+
+          {/* <BtnDonar/> */}
               <section className="mb-4">
 
                 {" "}
