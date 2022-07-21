@@ -37,7 +37,7 @@ const CarouselDeportistas = () => {
                     <div className="bannerPrincipalTexto">
 
                         <h6 className="animate__animated animate__fadeInDown bannerPrincipalTitulo">DEPORTES</h6>
-                        <h6 className="animate__animated animate__fadeInDown bannerPrincipalSubTitulo">Entérate de todo lo que esta por llegar</h6>
+                        <h6 className="animate__animated animate__fadeInDown bannerPrincipalSubTitulo">Directorio de deportistas</h6>
                     </div>
                 </div>
                 <Carousel

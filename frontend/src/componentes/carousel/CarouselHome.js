@@ -58,7 +58,7 @@ function CarouselHome() {
 
 							</LinkRouter>
 							
-								<KeyboardArrowDownIcon className="animate__animated animate__fadeInDown arrow-info" />
+								
 							
 						</div>
 					</div>

@@ -6,7 +6,7 @@ const BtnDonar = () => {
     <>
         <div className='donarContainer'>
             <div className='donarContent'>  
-               <h6>Ayúdanos!</h6> 
+               {/* <h6>Ayúdanos!</h6>  */}
             <button className='btn-donar'>DONAR</button>
             </div>
         </div>

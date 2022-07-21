@@ -3,13 +3,13 @@ const mongoose =require("mongoose")
 const colaboradoresSchema= new mongoose.Schema ({
 
     nombre: {type:String, require:true},
-    apellido: {type:String, require:true},
+    apellido: {type:String, require:false},
     profesion:{type:String, require:true},
     foto:{type:String, require:false},
-    nacionalidad:{type:String, require:true},
-    biografia:{type:String, require:true},
-    instagram:{type:String, require:true},
-    web:{type:String, require:true}
+    nacionalidad:{type:String, require:false},
+    biografia:{type:String, require:false},
+    instagram:{type:String, require:false},
+    web:{type:String, require:false}
     
 
 })
